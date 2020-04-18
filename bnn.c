@@ -70,7 +70,7 @@ int pif_plugin_bnn_process(EXTRACTED_HEADERS_T *headers, MATCH_DATA_T *data)
         int idx = weightheader->idx;
 
         weight_upper[idx]=(uint64_t)(weightheader->__val_0)<<32+(uint64_t)(weightheader->__val_1);
-        weight_upper[idx]=(uint64_t)(weightheader->__val_2)<<32+(uint64_t)(weightheader->__val_3);
+        weight_upper[idx]=(uint64_t)(weightheader->__val_2)<<24+(uint64_t)(weightheader->__val_3);
 
         return PIF_PLUGIN_RETURN_FORWARD;
     }
